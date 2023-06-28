@@ -135,8 +135,9 @@ html {
 }
 
 #content .content-section {
-    margin: 0 171px;
+    margin: auto;
     padding: 64px 16px;
+    max-width: 45%;
 }
 
 #content .section-heading,
@@ -189,12 +190,15 @@ html {
     background-color: white;
     margin-top: 40px;
     list-style: none;
+    width: 100%;
+
 }
 
 .tickets-list li {
     color: #757575;
     padding: 11px 16px;
     font-size: 15px;
+    max-width: 734px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -219,22 +223,115 @@ html {
 .places-list {
     display: flex;
     justify-content: space-between;
+    margin: 32px -8px 32px -8px;
+
 }
 
 .place-item {
     padding: 0 8px;
-    /*width: 245px;*/
-    /*height: 388px;*/
-    background-color: white;
+}
+
+.place-time, .place-desc {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.place-heading {
+    padding-top: 15px;
+    font-size: 15px;
 }
 
 .place-img {
-    padding: 0;
-    width: 245px ;
+    width: 100%;
+    display: block;
+}
 
+.place-img:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 
-#footer {
+.place-time {
+    color: rgb(145, 145, 145);
+}
 
+.place-buy-btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 15px;
+    display: inline-block;
+    margin: 15px 0 16px 0;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 0 16px;
+    width: 100%;
+}
+.contact-info .contact-detail{
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+}
+.contact-section .contact-about {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.contact-section .input-form {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-section .input-message{
+    width: 100%;
+    margin-top: 8px;
+}
+.contact-section .contact-btn{
+    background-color: black;
+    color: white;
+    display: block;
+    float: right;
+    padding: 8px 16px;
+    margin-top: 16px!important;
+}
+.contact-section .input-name, .contact-section .input-name,
+.contact-section .input-email, .contact-section .input-message {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.contact-section .input-container{
+        margin: 0 8px;
+}
+
+.map-section .map-img{
+    min-width: 100%;
+    filter: grayscale(50%);
+    display: block;
+}
+#footer {
+    padding: 64px 16px;
+    background-color: #f1f1f1;
+}
+#footer .social-icon{
+    display: flex;
+    justify-content: center;
+}
+#footer .social-icon i{
+    padding: 3px;
+    color: rgb(102,102,102) ;
+    font-size: 25px;
+}
+#footer .brand-desc{
+    text-align: center;
+    margin: 15px 0;
+    color: rgb(102,102,102);
 }
