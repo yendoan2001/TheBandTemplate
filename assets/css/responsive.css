@@ -1,0 +1,90 @@
+/*Responsive*/
+
+@media (min-width: 1024px) {
+    #header .menu-icon {
+        display: none;
+    }
+
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    #header .menu-icon {
+        display: none;
+    }
+
+}
+
+@media (max-width: 740px) {
+    .nav li {
+        display: block;
+    }
+
+    #header .search-icon {
+        display: none;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #slider .text-content {
+        display: none;
+
+    }
+
+    #content .members-list {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #content .member-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content .member-img {
+        width: 60%;
+        margin-bottom: 16px;
+
+    }
+
+    .places-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .place-item {
+        margin-bottom: 16px;
+    }
+
+    .contact-about {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .input-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .contact-section .input-name,
+    .contact-section .input-email {
+        width: 100%
+    }
+
+    .contact-section .input-container {
+        margin: 0;
+    }
+
+    #footer .social-icon i {
+        padding: 3px;
+        color: rgb(102, 102, 102);
+        font-size: 20px;
+    }
+
+
+}

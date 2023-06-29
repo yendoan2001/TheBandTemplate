@@ -6,10 +6,7 @@
 
 html {
     font-family: "Lato", sans-serif;
-}
-
-#main {
-
+    scroll-behavior: smooth;
 }
 
 #header {
@@ -22,21 +19,23 @@ html {
     z-index: 1;
 }
 
-#header .search-btn {
+#header .search-btn,
+#header .menu-btn {
     float: right;
     padding: 0 21px;
     cursor: pointer;
-
-
 }
 
 #header .search-btn:hover {
     background-color: #f44336;
-
-
 }
 
-#header .search-icon {
+#header .menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .search-icon,
+#header .menu-icon {
     color: white;
     font-size: 20px;
     line-height: 46px
@@ -46,9 +45,8 @@ html {
     display: inline-block;
 }
 
-.nav nav-arrow-down {
+.nav .nav-arrow-down {
     font-size: 14px
-
 }
 
 .nav li {
@@ -89,7 +87,7 @@ html {
 
 .subnav li {
     display: block;
-    min-width: 160px;
+    width: 160px;
 }
 
 .subnav li a {
@@ -100,17 +98,13 @@ html {
 
 .subnav li:hover a {
     background-color: #ccc;
-
-
 }
 
 #slider {
-    min-height: 500px;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/slider1.jpg') top center / cover no-repeat;
+    background: url('/assets/img/slider1.jpg') top center / cover no-repeat;
     position: relative;
-
 }
 
 #slider .text-content {
@@ -137,7 +131,8 @@ html {
 #content .content-section {
     margin: auto;
     padding: 64px 16px;
-    max-width: 45%;
+    width: 800px;
+    max-width: 100%;
 }
 
 #content .section-heading,
@@ -191,7 +186,6 @@ html {
     margin-top: 40px;
     list-style: none;
     width: 100%;
-
 }
 
 .tickets-list li {
@@ -277,10 +271,12 @@ html {
     padding: 0 16px;
     width: 100%;
 }
-.contact-info .contact-detail{
+
+.contact-info .contact-detail {
     font-family: Lato, sans-serif;
     font-size: 18px;
 }
+
 .contact-section .contact-about {
     display: flex;
     justify-content: space-between;
@@ -291,47 +287,56 @@ html {
     display: flex;
     justify-content: space-between;
 }
-.contact-section .input-message{
+
+.contact-section .input-message {
     width: 100%;
     margin-top: 8px;
 }
-.contact-section .contact-btn{
+
+.contact-section .contact-btn {
     background-color: black;
     color: white;
     display: block;
     float: right;
     padding: 8px 16px;
-    margin-top: 16px!important;
+    margin-top: 16px !important;
 }
-.contact-section .input-name, .contact-section .input-name,
-.contact-section .input-email, .contact-section .input-message {
+
+.contact-section .input-name,
+.contact-section .input-email,
+.contact-section .input-message {
     padding: 8px;
     border: 1px solid #ccc;
 }
-.contact-section .input-container{
-        margin: 0 8px;
+
+.contact-section .input-container {
+    margin: 0 8px;
 }
 
-.map-section .map-img{
-    min-width: 100%;
+.map-section .map-img {
+    width: 100%;
     filter: grayscale(50%);
     display: block;
 }
+
 #footer {
     padding: 64px 16px;
     background-color: #f1f1f1;
 }
-#footer .social-icon{
+
+#footer .social-icon {
     display: flex;
     justify-content: center;
 }
-#footer .social-icon i{
+
+#footer .social-icon i {
     padding: 3px;
-    color: rgb(102,102,102) ;
+    color: rgb(102, 102, 102);
     font-size: 25px;
 }
-#footer .brand-desc{
+
+#footer .brand-desc {
     text-align: center;
     margin: 15px 0;
-    color: rgb(102,102,102);
+    color: rgb(102, 102, 102);
 }

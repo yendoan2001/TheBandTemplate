@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <title>The Band</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -11,31 +13,31 @@
     <div id="header">
         <ul class="nav">
             <li>
-                <a href="">Home</a>
+                <a href="#slider">Home</a>
             </li>
             <li>
-                <a href="">Band</a>
+                <a href="#band">Band</a>
             </li>
             <li>
-                <a href="">Tour</a>
+                <a href="#tour">Tour</a>
             </li>
             <li>
-                <a href="">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
             <li>
-                <a href="">
+                <a href="#">
                     More
                     <i class="nav-arrow-down ti-angle-down"></i>
                 </a>
                 <ul class="subnav">
                     <li>
-                        <a href="">Merchandise</a>
+                        <a href="#">Merchandise</a>
                     </li>
                     <li>
-                        <a href="">Extras</a>
+                        <a href="#">Extras</a>
                     </li>
                     <li>
-                        <a href="">Media</a>
+                        <a href="#">Media</a>
                     </li>
                 </ul>
             </li>
@@ -43,6 +45,9 @@
 
         <div class="search-btn">
             <i class="search-icon ti-search"></i>
+        </div>
+        <div id="mobile-menu" class="menu-btn">
+            <i class="menu-icon ti-menu"></i>
         </div>
     </div>
     <div id="slider">
@@ -56,7 +61,7 @@
         </div>
     </div>
     <div id="content">
-        <div class="content-section">
+        <div id="band" class="content-section">
             <h1 class="section-heading">
                 THE BAND
             </h1>
@@ -77,24 +82,24 @@
                     <p class="member-name">
                         Name
                     </p>
-                    <img class="member-img" src="/assets/bandmember.jpg" alt="">
+                    <img class="member-img" src="/assets/img/bandmember.jpg" alt="">
                 </div>
                 <div class="member-item">
                     <p class="member-name">
                         Name
                     </p>
-                    <img class="member-img" src="/assets/bandmember.jpg" alt="">
+                    <img class="member-img" src="/assets/img/bandmember.jpg" alt="">
                 </div>
                 <div class="member-item">
                     <p class="member-name">
                         Name
                     </p>
-                    <img class="member-img" src="/assets/bandmember.jpg" alt="">
+                    <img class="member-img" src="/assets/img/bandmember.jpg" alt="">
                 </div>
 
             </div>
         </div>
-        <div class="tour-section">
+        <div id="tour" class="tour-section">
             <div class="content-section">
                 <h1 class="section-heading">
                     TOUR DATES
@@ -109,7 +114,7 @@
                 </ul>
                 <div class="places-list">
                     <div class="place-item">
-                        <img class="place-img" src="/assets/newyork.jpg" alt="">
+                        <img class="place-img" src="/assets/img/newyork.jpg" alt="">
                         <div class="place-body">
                             <h3 class="place-heading">
                                 New York
@@ -124,7 +129,7 @@
                         </div>
                     </div>
                     <div class="place-item">
-                        <img class="place-img" src="/assets/paris.jpg" alt="">
+                        <img class="place-img" src="/assets/img/paris.jpg" alt="">
                         <div class="place-body">
                             <h3 class="place-heading">
                                 Paris
@@ -140,7 +145,7 @@
                         </div>
                     </div>
                     <div class="place-item">
-                        <img class="place-img" src="/assets/sanfran.jpg" alt="">
+                        <img class="place-img" src="/assets/img/sanfran.jpg" alt="">
                         <div class="place-body">
                             <h3 class="place-heading">
                                 San Francisco
@@ -152,14 +157,13 @@
                                 Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                             </p>
                             <a class="place-buy-btn" href="#">Buy Tickets</a>
-
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div class="contact-section">
+        <div id="contact" class="contact-section">
             <div class="content-section">
                 <h1 class="section-heading">
                     CONTACT
@@ -195,18 +199,18 @@
                             <input placeholder="Message" type="text" class="input-message">
                         </div>
                         <div class="input-container contact-btn">
-                                SEND
+                            SEND
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="map-section">
-            <img class="map-img" src="/assets/map.jpg" alt="">
+            <img class="map-img" src="/assets/img/map.jpg" alt="">
         </div>
     </div>
     <div id="footer">
-        <div class="social-icon">
+        <div  class="social-icon">
             <i class="ti-facebook"></i>
             <i class="ti-instagram"></i>
             <i class="ti-twitter"></i>
@@ -219,6 +223,20 @@
         </div>
     </div>
 </div>
+<script>
+    var header = document.getElementById('header');
+    var mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.onclick = function () {
+        var isClosed = header.clientHeight === 46;
+        if (isClosed) {
+            header.style.height = "auto"
+        } else {
+            header.style.height = '46px'
+        }
+    }
 
+    // Tự động đóng khi chọn menu
+    var menuItems = document.querySelector()
+</script>
 </body>
 </html>
